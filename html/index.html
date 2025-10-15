@@ -1,84 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contexto por Categorías</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contexto por Categorías</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
-    <div class="container">
+  <main>
+    <!-- Pantalla de inicio -->
+    <section id="inicio" class="pantalla activa">
+      <h1>🧠 Contexto por Categorías</h1>
+      <input type="text" id="nombreJugador" placeholder="Tu nombre...">
+      <button id="btnJugar">Jugar</button>
+    </section>
 
-        <!-- Pantalla de inicio -->
-        <section id="inicio" class="pantalla activa">
-            <h1>Contexto por Categorías</h1>
-            <p>Descubrí la palabra secreta dentro de su categoría 🔍</p>
-            <button class="btn" id="btnJugar">Jugar</button>
-        </section>
+    <!-- Selección de categoría -->
+    <section id="categorias" class="pantalla">
+      <h2>Elegí una categoría</h2>
+      <div class="categorias-lista">
+        <button class="categoria" data-color="#ff7675">🎬 Películas</button>
+        <button class="categoria" data-color="#74b9ff">🌍 Países</button>
+        <button class="categoria" data-color="#55efc4">⚽ Deportes</button>
+        <button class="categoria" data-color="#fab1a0">🍔 Comida</button>
+        <button class="categoria" data-color="#ffeaa7">📜 Historia</button>
+        <button class="categoria" data-color="#a29bfe">💻 Tecnología</button>
+      </div>
 
-        <!-- Pantalla de categorías -->
-        <section id="categorias" class="pantalla">
-            <h2>Elegí una categoría</h2>
-            <div class="categorias-lista">
-                <button class="categoria" data-color="#ff7675">🎬 Películas</button>
-                <button class="categoria" data-color="#74b9ff">🌍 Países</button>
-                <button class="categoria" data-color="#55efc4">⚽ Deportes</button>
-                <button class="categoria" data-color="#fab1a0">🍔 Comida</button>
-                <button class="categoria" data-color="#ffeaa7">📜 Historia</button>
-                <button class="categoria" data-color="#a29bfe">💻 Tecnología</button>
-            </div>
-            <button class="btn volver">Volver</button>
+      <h3>🏅 Ranking</h3>
+      <ol id="ranking"></ol>
 
-            <section id="categorias" class="pantalla">
-                <h2>Elegí una categoría</h2>
-                <div class="categorias-lista">
-                    <button class="categoria" data-color="#ff7675">🎬 Películas</button>
-                    <button class="categoria" data-color="#74b9ff">🌍 Países</button>
-                    <button class="categoria" data-color="#55efc4">⚽ Deportes</button>
-                    <button class="categoria" data-color="#fab1a0">🍔 Comida</button>
-                    <button class="categoria" data-color="#ffeaa7">📜 Historia</button>
-                    <button class="categoria" data-color="#a29bfe">💻 Tecnología</button>
-                </div>
+      <button class="btn volver">Volver</button>
+    </section>
 
-                <h3>🏅 Ranking</h3>
-                <ol id="ranking"></ol>
+    <!-- Pantalla del juego -->
+    <section id="juego" class="pantalla">
+      <h2 id="tituloCategoria">Categoría</h2>
+      <p>Intentos: <span id="contadorIntentos">0</span></p>
+      <p>Puntaje: <span id="puntaje">0</span></p>
 
-                <button class="btn volver">Volver</button>
-            </section>
-        </section>
+      <input type="text" id="inputPalabra" placeholder="Escribí tu palabra...">
+      <button id="btnIntentar">Intentar</button>
 
-        <!-- Pantalla del juego -->
-        <section id="juego" class="pantalla">
-            <h2 id="tituloCategoria">Categoría: ---</h2>
-            <p>Intentá adivinar la palabra secreta</p>
+      <ul id="listaIntentos"></ul>
+      <button class="btn volver">Volver</button>
+    </section>
+  </main>
 
-            <div class="input-box">
-                <input type="text" placeholder="Escribí tu palabra..." id="inputPalabra">
-                <button class="btn" id="btnProbar">Probar</button>
-            </div>
-
-
-            <div class="intentos">
-                <div class="info-juego">
-                    <p>Intentos: <span id="contadorIntentos">0</span></p>
-                    <p>Puntaje: <span id="puntaje">0</span></p>
-                </div>
-
-                <h3>Intentos</h3>
-                <ul id="listaIntentos">
-                    <li>Fútbol ⚽ — Cercano</li>
-                    <li>Tenis 🎾 — Lejano</li>
-                </ul>
-            </div>
-
-            <button class="btn volver">Volver</button>
-        </section>
-
-    </div>
-
-    <script src="/js/app.js"></script>
+  <script src="/js/app.js"></script>
 </body>
-
 </html>
