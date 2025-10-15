@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contexto por Categorías</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <script defer src="/js/app.js"></script>
 </head>
 <body>
-  <main>
-    <!-- Pantalla de inicio -->
+  <main class="container">
+    <h1>🧠 Contexto por Categorías</h1>
+
     <section id="inicio" class="pantalla activa">
-      <h1>🧠 Contexto por Categorías</h1>
-      <input type="text" id="nombreJugador" placeholder="Tu nombre...">
-      <button id="btnJugar">Jugar</button>
+      <input id="nombreJugador" placeholder="Tu nombre" />
+      <button id="btnComenzar" disabled>Jugar</button>
+      <small id="estadoCarga">Cargando categorías...</small>
     </section>
 
-    <!-- Selección de categoría -->
     <section id="categorias" class="pantalla">
-      <h2>Elegí una categoría</h2>
-      <div class="categorias-lista">
-        <button class="categoria" data-color="#ff7675">🎬 Películas</button>
-        <button class="categoria" data-color="#74b9ff">🌍 Países</button>
-        <button class="categoria" data-color="#55efc4">⚽ Deportes</button>
-        <button class="categoria" data-color="#fab1a0">🍔 Comida</button>
-        <button class="categoria" data-color="#ffeaa7">📜 Historia</button>
-        <button class="categoria" data-color="#a29bfe">💻 Tecnología</button>
+      <h2>Elige una categoría</h2>
+      <div id="categorias-container" class="grid"></div>
+      <button class="volver" id="btnVolverInicio">Volver</button>
+    </section>
+
+    <section id="juego" class="pantalla">
+      <h2 id="categoriaSeleccionada">Categoría</h2>
+      <div class="hud">
+        <div>Jugador: <span id="jugadorNombre"></span></div>
+        <div>Tiempo: <span id="contador">60</span>s</div>
+        <div>Puntaje: <span id="puntaje">0</span></div>
       </div>
 
-      <h3>🏅 Ranking</h3>
-      <ol id="ranking"></ol>
+      <div class="progress-bar"><div id="progreso"></div></div>
 
-      <button class="btn volver">Volver</button>
+      <input id="input-palabra" placeholder="Escribí tu palabra..." />
+      <button id="btnProbar">Probar</button>
+
+      <ul id="lista-intentos"></ul>
+
+      <button class="volver" id="btnSalir">Salir</button>
     </section>
 
-    <!-- Pantalla del juego -->
-    <section id="juego" class="pantalla">
-      <h2 id="tituloCategoria">Categoría</h2>
-      <p>Intentos: <span id="contadorIntentos">0</span></p>
-      <p>Puntaje: <span id="puntaje">0</span></p>
-
-      <input type="text" id="inputPalabra" placeholder="Escribí tu palabra...">
-      <button id="btnIntentar">Intentar</button>
-
-      <ul id="listaIntentos"></ul>
-      <button class="btn volver">Volver</button>
+    <section id="ranking" class="pantalla">
+      <h2>🏆 Ranking</h2>
+      <ol id="lista-ranking"></ol>
+      <button class="volver" id="btnVolverDesdeRanking">Volver</button>
     </section>
   </main>
-
-  <script src="/js/app.js"></script>
 </body>
 </html>

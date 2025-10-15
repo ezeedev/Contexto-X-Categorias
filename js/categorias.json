@@ -1,0 +1,84 @@
+{
+  "categorias": [
+    {
+      "nombre": "🌎 Países",
+      "palabras": ["Argentina", "Brasil", "Chile", "Uruguay", "Paraguay", "México", "España", "Francia", "Italia", "Alemania", "Japón", "China", "India", "Canadá", "Estados Unidos", "Australia", "Perú", "Colombia", "Egipto", "Sudáfrica"]
+    },
+    {
+      "nombre": "🍔 Comidas",
+      "palabras": ["Pizza", "Hamburguesa", "Empanada", "Taco", "Sushi", "Pasta", "Asado", "Milanesa", "Paella", "Ensalada", "Helado", "Sandwich", "Choripán", "Ceviche", "Ravioles", "Lasaña", "Panqueque", "Hot Dog", "Burrito", "Tarta"]
+    },
+    {
+      "nombre": "🎬 Películas",
+      "palabras": ["Titanic", "Avatar", "Matrix", "Inception", "Gladiador", "El Padrino", "Interestelar", "Avengers", "Spiderman", "Batman", "Joker", "Forrest Gump", "Toy Story", "Frozen", "Coco", "El Rey León", "Jurassic Park", "Harry Potter", "Star Wars", "Shrek"]
+    },
+    {
+      "nombre": "🎵 Músicos",
+      "palabras": ["Bad Bunny", "Shakira", "Duki", "Bizarrap", "Taylor Swift", "Adele", "Eminem", "Rihanna", "The Weeknd", "Drake", "Beyoncé", "Rosalía", "Michael Jackson", "Lady Gaga", "Soda Stereo", "Trueno", "Tini", "Karol G", "Nathy Peluso", "Ed Sheeran"]
+    },
+    {
+      "nombre": "⚽ Deportes",
+      "palabras": ["Fútbol", "Básquet", "Tenis", "Natación", "Atletismo", "Rugby", "Boxeo", "Vóley", "Ciclismo", "Hockey", "Golf", "Esgrima", "Surf", "Patinaje", "Escalada", "Arquería", "Handball", "Karate", "Skate", "Snowboard"]
+    },
+    {
+      "nombre": "🌳 Animales",
+      "palabras": ["Perro", "Gato", "Caballo", "Tigre", "León", "Elefante", "Delfín", "Oso", "Cebra", "Gorila", "Tiburón", "Lobo", "Águila", "Jirafa", "Zorro", "Ballena", "Panda", "Serpiente", "Koala", "Rinoceronte"]
+    },
+    {
+      "nombre": "🏙️ Ciudades",
+      "palabras": ["Buenos Aires", "París", "Roma", "Londres", "Tokio", "Madrid", "Nueva York", "Sídney", "Berlín", "Barcelona", "Lima", "Bogotá", "Montevideo", "Santiago", "Dubái", "Pekín", "Toronto", "Los Ángeles", "Estambul", "Atenas"]
+    },
+    {
+      "nombre": "💻 Tecnología",
+      "palabras": ["Computadora", "Internet", "Smartphone", "Tablet", "Cámara", "Teclado", "Ratón", "Monitor", "Consola", "Red", "Servidor", "Software", "Hardware", "Robot", "Inteligencia Artificial", "Ciberseguridad", "Algoritmo", "Base de Datos", "Código", "Aplicación"]
+    },
+    {
+      "nombre": "📚 Literatura",
+      "palabras": ["Cien Años de Soledad", "Don Quijote", "Harry Potter", "El Principito", "El Hobbit", "Romeo y Julieta", "La Odisea", "Drácula", "Frankenstein", "It", "Crimen y Castigo", "1984", "Fahrenheit 451", "El Señor de los Anillos", "Rayuela", "El Alquimista", "Los Miserables", "Orgullo y Prejuicio", "Moby Dick", "Hamlet"]
+    },
+    {
+      "nombre": "🎮 Videojuegos",
+      "palabras": ["Minecraft", "Fortnite", "GTA", "Zelda", "Mario", "Call of Duty", "Among Us", "FIFA", "Valorant", "Overwatch", "League of Legends", "Clash Royale", "PUBG", "Roblox", "Tetris", "Counter Strike", "God of War", "Pokémon", "The Sims", "Apex Legends"]
+    },
+    {
+      "nombre": "🌦️ Clima",
+      "palabras": ["Lluvia", "Nieve", "Sol", "Tormenta", "Viento", "Granizo", "Nublado", "Despejado", "Frío", "Calor", "Huracán", "Tornado", "Rayo", "Relámpago", "Trueno", "Sequía", "Nevada", "Brisa", "Niebla", "Ciclón"]
+    },
+    {
+      "nombre": "🪐 Espacio",
+      "palabras": ["Sol", "Luna", "Marte", "Júpiter", "Saturno", "Venus", "Neptuno", "Urano", "Tierra", "Estrella", "Cometa", "Agujero Negro", "Asteroide", "Galaxia", "Constelación", "Supernova", "Meteorito", "Nave", "Astronauta", "Telescopio"]
+    },
+    {
+      "nombre": "🎨 Colores",
+      "palabras": ["Rojo", "Azul", "Verde", "Amarillo", "Naranja", "Violeta", "Rosa", "Marrón", "Negro", "Blanco", "Gris", "Celeste", "Turquesa", "Magenta", "Beige", "Dorado", "Plateado", "Borgoña", "Fucsia", "Cian"]
+    },
+    {
+      "nombre": "🧠 Emociones",
+      "palabras": ["Alegría", "Tristeza", "Miedo", "Ira", "Amor", "Odio", "Esperanza", "Vergüenza", "Sorpresa", "Culpa", "Orgullo", "Calma", "Estrés", "Nostalgia", "Paz", "Ansiedad", "Confianza", "Envidia", "Celos", "Gratitud"]
+    },
+    {
+      "nombre": "👗 Moda",
+      "palabras": ["Camisa", "Pantalón", "Vestido", "Zapatos", "Sombrero", "Bufanda", "Abrigo", "Jeans", "Falda", "Reloj", "Cartera", "Anillo", "Gorra", "Chaleco", "Botas", "Guantes", "Traje", "Cinturón", "Corbata", "Pulsera"]
+    },
+    {
+      "nombre": "🚗 Vehículos",
+      "palabras": ["Auto", "Moto", "Bicicleta", "Camión", "Avión", "Barco", "Tren", "Helicóptero", "Submarino", "Patineta", "Bus", "Tractor", "Caravana", "Lancha", "Colectivo", "Monopatín", "Patineta eléctrica", "Jet", "Coche", "Moto acuática"]
+    },
+    {
+      "nombre": "🎭 Series",
+      "palabras": ["Breaking Bad", "Friends", "Los Simpson", "Stranger Things", "The Office", "Game of Thrones", "La Casa de Papel", "Dark", "Vikings", "Peaky Blinders", "The Walking Dead", "Merlina", "Narcos", "Euphoria", "Loki", "WandaVision", "Better Call Saul", "Suits", "El Marginal", "Rick and Morty"]
+    },
+    {
+      "nombre": "🧩 Juegos de Mesa",
+      "palabras": ["Ajedrez", "Monopoly", "Jenga", "UNO", "Scrabble", "Damas", "Dominó", "Risk", "Pictionary", "Truco", "Clue", "Dados", "Backgammon", "Teg", "Carcassonne", "Catan", "Lotería", "Bingo", "Memory", "Tabú"]
+    },
+    {
+      "nombre": "🎤 Géneros Musicales",
+      "palabras": ["Pop", "Rock", "Rap", "Reggaetón", "Trap", "Salsa", "Cumbia", "Tango", "Jazz", "Blues", "Electrónica", "Folk", "Metal", "Country", "Kpop", "Clásica", "Punk", "Reggae", "Hip Hop", "Disco"]
+    },
+    {
+      "nombre": "🧪 Ciencia",
+      "palabras": ["Química", "Física", "Biología", "Astronomía", "Geología", "Botánica", "Genética", "Microbiología", "Zoología", "Ecología", "Matemática", "Cibernética", "Anatomía", "Óptica", "Mecánica", "Termodinámica", "Neurociencia", "Quarks", "Molécula", "Energía"]
+    }
+  ]
+}
