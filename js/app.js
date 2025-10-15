@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const puntajeEl = document.getElementById("puntaje");
   const inputPalabra = document.getElementById("input-palabra");
   const listaRanking = document.getElementById("lista-ranking");
+  const correctSound = new Audio("/sounds/correct.wav");
+  const wrongSound = new Audio("/sounds/wrong.wav");
+  const timeOutSound = new Audio("/sounds/timeout.wav");
+
 
   let categoriasCargadas = false;
   let categoriasSource = null;
@@ -183,9 +187,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Finalizar partida
-  function finalizarPartida(ganado) {
-    if (ganado) alert(`🎉 ${nombreJugador}, acertaste! Puntaje: ${puntaje}`);
-    else alert(`⏰ Tiempo! La palabra era: ${palabraSecreta}`);
+  function finalizarPartida(ganado, incorrecto) {
+    if (ganado){
+      correctSound.play();
+      alert(`🎉 ${nombreJugador}, acertaste! Puntaje: ${puntaje}`)
+    } else if (incorrecto) {
+      wrongSound.play();
+    }
+    else {
+      timeOutSound.play();
+      alert(`⏰ Tiempo agotado! La palabra era: ${palabraSecreta}. Puntaje: ${puntaje}`);
+    }
     guardarRanking({ nombre: nombreJugador, puntos: puntaje, categoria: categoriaActual, fecha: new Date().toLocaleString() });
     mostrarRanking();
     mostrarPantalla("ranking");
